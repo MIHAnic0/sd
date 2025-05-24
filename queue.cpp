@@ -40,13 +40,11 @@ class Queue {
         int size = fir->getHeight();
         sec->clear();
         for (int i=0; i<size; i++) sec->push(fir->pop());
-        fir->clear();
     }
     void transferSF() {
         int size = sec->getHeight();
         fir->clear();
         for (int i=0; i<size; i++) fir->push(sec->pop());
-        sec->clear();
     }
 public:
     Queue(int a) {

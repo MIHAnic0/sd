@@ -6,7 +6,7 @@
 #include <cblas.h>
 using namespace std; 
 
-const int EPS = 0.001;
+const float EPS = 0.001;
 
 float randFloat(float a, float b) {
     float n = rand();
